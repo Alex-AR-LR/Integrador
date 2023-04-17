@@ -94,12 +94,14 @@ $utilities: map-merge(
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-
-#logo {
-  width: 110px;
+.navbar {
+  &__logo {
+    width: 110px;
+  }
 }
+
 .banner {
-  // background-image: url(../../src/images/banner.jpg);
+  background-image: url(../assets/images/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 0;
@@ -130,7 +132,7 @@ $utilities: map-merge(
   }
 
   &__img-content {
-    // background-image: url(../../src/images/blob.svg);
+    background-image: url(../assets/images/blob.svg);
     background-repeat: no-repeat;
     background-position: 45% center;
   }
@@ -163,7 +165,7 @@ $utilities: map-merge(
 
 .filtro {
   &__content {
-    // background-image: url(../../src/images/gronkey2.png);
+    background-image: url(../assets/images/gronkey2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +179,7 @@ $utilities: map-merge(
 }
 
 footer {
-  // background-image: url(../../src/images/footer.jpg);
+  background-image: url(../assets/images/footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,8 +188,10 @@ footer {
 /* Medias */
 
 @include media-breakpoint-up(lg) {
-  #logo {
-    width: 130px;
+  .navbar {
+    &__logo {
+      width: 110px;
+    }
   }
 
   .filtro {
